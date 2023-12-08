@@ -12,10 +12,10 @@ npm install sample-env --save-dev
 ```
 node sample-env
 ```
-Looks for a .env file inside the directory you run the command from and converts it into .sample.env file
+Looks for a .env file inside the directory you run the command from and creates a .sample.env version of the file.
 
 ### Custom file
 ```
 node sample-env -f .env.production
 ```
-Looks for a .env.production file inside the directory you run the command from and converts it into .sample.env.production file.
+Looks for a .env.production file inside the directory you run the command from and creates a .sample.env.production version of the file.
