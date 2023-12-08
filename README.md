@@ -3,19 +3,19 @@ Creates a .sample-env file with all the entries from your .env file without the 
 
 # Install
 ```
-    npm install sample-env --save-dev
+npm install sample-env --save-dev
 ```
 
 # Usage
 
 ### Default
 ```
-    node sample-env
+node sample-env
 ```
 Looks for a .env file inside the directory you run the command from and converts it into .sample.env file
 
 ### Custom file
 ```
-    node sample-env -f .env.production
+node sample-env -f .env.production
 ```
 Looks for a .env.production file inside the directory you run the command from and converts it into .sample.env.production file.
