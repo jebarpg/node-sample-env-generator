@@ -42,7 +42,6 @@ fs.writeFile(sample_file_name, "", function (err) {
 
 //read .env file line by line and convert into a .sample.env file
 rl.on("line", (line) => {
-  console.log("Line from file:", line);
   //Replace lines such as HOST=localhost with just HOST=. Also keep preserve comment lines
   var sample_text = line.replace(/((?:^.*?=|^\s*#.*)).*$/g, "$1");
   //Preserve comments at the end of a line if present, then append them i.e. 
@@ -52,8 +51,6 @@ rl.on("line", (line) => {
   var comment = line.replace(/^.+?(#.*$)/gm, "$1");
   if (comment != line) sample_text += " " + comment + "\n";
   else sample_text += "\n";
-  console.log(sample_text);
-  console.log("comment: " + comment);
   fs.appendFile(sample_file_name, sample_text, function (err) {
     if (err) {
       // append failed
@@ -61,3 +58,4 @@ rl.on("line", (line) => {
     }
   });
 });
+console.log("Created : " + sample_file_name);
