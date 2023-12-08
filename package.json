@@ -1,0 +1,28 @@
+{
+  "name": "sample-env",
+  "version": "1.0.0",
+  "description": "Generate a .sample.env file to safely commit to your git repo without any of your private data.",
+  "main": "sample-env.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jebarpg/node-sample-env-generator.git"
+  },
+  "keywords": [
+    "sample",
+    "env",
+    "node",
+    "generator"
+  ],
+  "author": "Jebarpg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jebarpg/node-sample-env-generator/issues"
+  },
+  "homepage": "https://github.com/jebarpg/node-sample-env-generator#readme",
+  "dependencies": {
+    "commander": "^11.1.0"
+  }
+}
