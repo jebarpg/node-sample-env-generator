@@ -1,5 +1,5 @@
 # node-sample-env-generator
-Creates a .sample-env file with all the entries from your .env file without the information after the = sign using nodejs. Comments are preserved. The .sample.env file is made to be a safe file to commit to your git repo.
+Creates a .sample-env file with all the entries from your .env file without the information after the = sign using NodeJS. Comments are preserved. The .sample.env file is made to be a safe file to commit to your git repo.
 
 # Install
 ```

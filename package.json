@@ -24,5 +24,8 @@
   "homepage": "https://github.com/jebarpg/node-sample-env-generator#readme",
   "dependencies": {
     "commander": "^11.1.0"
+  },
+  "bin":{
+    "sample-env": "./sample-env.js"
   }
 }

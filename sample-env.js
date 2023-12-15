@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const commander = require("commander");
 const readline = require("readline");
 const fs = require("fs");
@@ -25,18 +27,24 @@ if (options.file) {
 }
 
 var sample_file_name = '.sample' + file
+var rl;
+if(fs.existsSync(file)) {
+  // Try to run this code 
+  rl = readline.createInterface({
+    input: fs.createReadStream(file),
+  });
+} else {
+  // if any error, Code throws the error
+  console.log("Could note open file: " + file + " please make sure it exists in your current directory");
+  return;
+}
 
-const rl = readline.createInterface({
-  input: fs.createReadStream(file),
-});
 
 //Create new file or overwrite existing file
 fs.writeFile(sample_file_name, "", function (err) {
   if (err) {
     // append failed
     console.log("failed to write to file " + sample_file_name);
-  } else {
-    // done
   }
 });
 
