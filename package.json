@@ -1,5 +1,5 @@
 {
-  "name": "sample-env",
+  "name": "sample-env-generator",
   "version": "1.0.0",
   "description": "Generate a .sample.env file to safely commit to your git repo without any of your private data.",
   "main": "sample-env.js",
