@@ -5,7 +5,7 @@ const readline = require("readline");
 const fs = require("fs");
 
 commander
-  .name("sample-env")
+  .name("sample-env-generator")
   .description(
     "Default usage looks for a .env file in the directory you run this command in and generates a .sample.env file stripped of all values. Which you can then safely commit the .sample.env to your git repo without any of your private data being committed."
   )

@@ -25,7 +25,7 @@
   "dependencies": {
     "commander": "^11.1.0"
   },
-  "bin":{
-    "sample-env": "./sample-env.js"
+  "bin": {
+    "sample-env-generator": "sample-env.js"
   }
 }
